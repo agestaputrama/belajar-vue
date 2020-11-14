@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Vue Js</title>
+</head>
+<body>
+    <div id="app">
+       <div v-for="komentar in komentars">
+            <button>+</button>
+            <p>{{komentar}} || tanggal || score</p><br>
+            <button>-</button><br><br>
+        </div> 
+     <textarea type="text" cols="50" rows="10" v-on:keyup.enter="addKomen" v-model="content" ></textarea>
+    </div>
+    
+    <script src="assets/vendor/vue.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
